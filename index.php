@@ -10,6 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>welcome</h1>
+    <!-- nav -->
+    <nav>
+        <a href="index.php" class="logo">BUSINESS <br> <span>Marketing &amp; consulting</span></a>
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="team.php">Team</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+    </nav>
 </body>
 </html>
