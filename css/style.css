@@ -10,7 +10,6 @@ basic styles
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -24,6 +23,30 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*# sourceMappingURL=style.css.map */
+ul {
+  list-style: none;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-size: 3rem;
+}
+a:hover {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/*********************
+nav
+*********************/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: linear-gradient(to right, #ef1f52, #cccac5);
+}
 
 /*# sourceMappingURL=style.css.map */
