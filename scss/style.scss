@@ -35,9 +35,13 @@ body {
     font-family: $fontFamily;
     line-height: 1.6;
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: $white;
+    color: $black;
 }
 ul {
     list-style: none;
@@ -62,10 +66,15 @@ nav {
         font-size: 1.8rem;
         line-height: 25px;
         font-weight: 700;
+        color: $white;
         span {
             font-size: 1rem;
-            color: $white;
+            color: $black;
             font-weight: 600;
+        }
+        &:hover {
+            color: $lightgray;
+            transition: $transition;
         }
     }
     ul {
@@ -91,6 +100,36 @@ nav {
                     &:hover {
                         color: $lightgray;
                     }
+                }
+            }
+        }
+    }
+}
+
+/*********************
+footer
+*********************/
+footer {
+    padding: 100px 0;
+    background: linear-gradient(to right, $black, $pink);
+    text-align: center;
+    .container {
+        @include flex(space-between, center, row);
+        .col {
+            flex: 1;
+            .logo {
+                font-size: 1.5rem;
+                line-height: 25px;
+                font-weight: 700;
+                color: $white;
+                span {
+                    font-size: 1rem;
+                    color: $pink;
+                    font-weight: 500;
+                }
+                &:hover {
+                    color: $pink;
+                    transition: $transition;
                 }
             }
         }
