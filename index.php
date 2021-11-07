@@ -31,4 +31,56 @@
         </article>
     </section>
 
+    <!-- headings -->
+    <section class="container headings">
+        <article>
+            <h2>02</h2>
+        </article>
+        <article>
+            <h3>SERVICES</h3>
+            <h2><span>HOW TO PROVIDE</span> TOOLS THAT HELP ANYONE</h2>
+            <h4>Get your Business in 4 easy steps</h4>
+        </article>
+    </section>
+
+    <!-- services -->
+    <section class="container services">
+        <article>
+            <i class="far fa-chart-bar"></i>
+            <h2>Marketing</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam illo, perferendis qui in rem consequatur omnis cumque saepe, repellendus eaque. Labore ducimus modi dolorum voluptates sequi iste praesentium, omnis.</p>
+        </article>
+        <article>
+            <i class="fas fa-bullseye"></i>
+            <h2>Marketing</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam illo, perferendis qui in rem consequatur omnis cumque saepe, repellendus eaque. Labore ducimus modi dolorum voluptates sequi iste praesentium, omnis.</p>
+        </article>
+        <article>
+            <i class="fas fa-map-signs"></i>
+            <h2>Marketing</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam illo, perferendis qui in rem consequatur omnis cumque saepe, repellendus eaque. Labore ducimus modi dolorum voluptates sequi iste praesentium, omnis.</p>
+        </article>
+        <article>
+            <i class="fas fa-filter"></i>
+            <h2>Marketing</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam illo, perferendis qui in rem consequatur omnis cumque saepe, repellendus eaque. Labore ducimus modi dolorum voluptates sequi iste praesentium, omnis.</p>
+        </article>
+        <article>
+            <i class="fas fa-hand-holding-usd"></i>
+            <h2>Marketing</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam illo, perferendis qui in rem consequatur omnis cumque saepe, repellendus eaque. Labore ducimus modi dolorum voluptates sequi iste praesentium, omnis.</p>
+        </article>
+        <article>
+            <i class="fas fa-bullhorn"></i>
+            <h2>Marketing</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam illo, perferendis qui in rem consequatur omnis cumque saepe, repellendus eaque. Labore ducimus modi dolorum voluptates sequi iste praesentium, omnis.</p>
+        </article>
+    </section>
+
 <?php include "partials/footer.php"; ?>
