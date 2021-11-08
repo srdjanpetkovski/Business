@@ -50,7 +50,7 @@ body {
     width: 80%;
     margin: 0 auto;
     @media (max-width:767px) {
-        width: 95%;
+        width: 90%;
     }
 }
 .headings {
@@ -202,10 +202,6 @@ header
 }
 
 /*********************
-headings
-*********************/
-
-/*********************
 about
 *********************/
 .about {
@@ -287,7 +283,6 @@ services
 business
 *********************/
 .business {
-    
     background: $black;
     color: $white;
     .headings {
@@ -323,12 +318,45 @@ business
 }
 
 /*********************
+team
+*********************/
+.team {
+    padding-bottom: 100px;
+    @include flex(space-between, center, row);
+    article {
+        flex: 0 0 30%;
+        text-align: center;
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+        }
+        img {
+            width: 100%;
+            border-radius: 50%;
+            border: 15px solid $lightgray;
+            opacity: .8;
+            margin-top: 20px;
+            transition: $transition;
+            &:hover {
+                border: 15px solid $pink;
+                transform: scale(1.1);
+            }
+        }
+        h4 {
+            color: $pink;
+            font-size: 1.3rem;
+            margin: 16px 0;
+        }
+    }
+}
+
+/*********************
 footer
 *********************/
 footer {
     padding: 100px 0;
     background: linear-gradient(to right, $black, $pink);
     text-align: center;
+    color: $white;
     .container {
         @include flex(space-between, center, row);
         .col {
