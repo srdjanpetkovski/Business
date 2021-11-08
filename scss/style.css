@@ -252,7 +252,7 @@ nav ul li:nth-child(6) a:hover {
 /*********************
 header
 *********************/
-header {
+.mainHeader {
   background-image: url("../img/header.jpg");
   background-position: center;
   background-size: cover;
@@ -277,7 +277,7 @@ header {
 }
 
 @media (max-width: 767px) {
-  header {
+  .mainHeader {
     text-align: left;
     padding: 35px;
     display: -webkit-box;
@@ -298,28 +298,28 @@ header {
   }
 }
 
-header h1 {
+.mainHeader h1 {
   font-size: 4rem;
   line-height: 1.3;
 }
 
 @media (max-width: 767px) {
-  header h1 {
+  .mainHeader h1 {
     font-size: 3rem;
   }
 }
 
-header h3 {
+.mainHeader h3 {
   color: #ef1f52;
   font-size: 2rem;
 }
 
-header p {
+.mainHeader p {
   font-size: 21px;
   color: #ef1f52;
 }
 
-header button {
+.mainHeader button {
   padding: 15px 40px;
   background: #ef1f52;
   color: #fff;
@@ -328,7 +328,7 @@ header button {
   cursor: pointer;
 }
 
-header button:hover {
+.mainHeader button:hover {
   background: #1f1f1f;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -474,6 +474,9 @@ services
           flex: 0 0 30%;
   border: 1px solid #1f1f1f;
   padding: 20px;
+  margin-bottom: 55px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 @media (max-width: 767px) {
@@ -481,13 +484,11 @@ services
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
 .services article:hover {
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0 0 20px #cccac5;
@@ -509,34 +510,92 @@ services
   margin-bottom: 20px;
 }
 
-.services article:nth-child(1) {
-  margin-bottom: 55px;
+/*********************
+business
+*********************/
+.business {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.business .headings button {
+  padding: 15px 40px;
+  background: #ef1f52;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.business .headings button:hover {
+  background: #1f1f1f;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.business .counter {
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.business .counter .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  color: #ef1f52;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 767px) {
-  .services article:nth-child(1) {
-    margin-bottom: 20px;
+  .business .counter .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 
-.services article:nth-child(2) {
-  margin-bottom: 55px;
+.business .counter .col h2 {
+  font-size: 4rem;
 }
 
-@media (max-width: 767px) {
-  .services article:nth-child(2) {
-    margin-bottom: 20px;
-  }
+.business .counter .col h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.services article:nth-child(3) {
-  margin-bottom: 55px;
-}
-
-@media (max-width: 767px) {
-  .services article:nth-child(3) {
-    margin-bottom: 20px;
-  }
+.business .counter .col hr {
+  width: 20%;
+  border: none;
+  height: 2px;
+  background: #fff;
 }
 
 /*********************

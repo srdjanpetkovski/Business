@@ -168,7 +168,7 @@ nav {
 /*********************
 header
 *********************/
-header {
+.mainHeader {
     background-image: url("../img/header.jpg");
     background-position: center;
     background-size: cover;
@@ -258,12 +258,13 @@ services
         flex: 0 0 30%;
         border: 1px solid $black;
         padding: 20px;
+        margin-bottom: 55px;
+        transition: $transition;
         @media (max-width:767px) {
             flex: 0 0 100%;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         &:hover {
-            transition: $transition;
             transform: scale(1.1);
             box-shadow: 0 0 20px $boxShadow;
         }
@@ -280,22 +281,43 @@ services
             margin-bottom: 20px;
         }
     }
-    article:nth-child(1) {
-        margin-bottom: 55px;
-        @media (max-width:767px) {
-            margin-bottom: 20px;
+}
+
+/*********************
+business
+*********************/
+.business {
+    
+    background: $black;
+    color: $white;
+    .headings {
+        button {
+            @include btn;
         }
     }
-    article:nth-child(2) {
-        margin-bottom: 55px;
-        @media (max-width:767px) {
-            margin-bottom: 20px;
-        }
-    }
-    article:nth-child(3) {
-        margin-bottom: 55px;
-        @media (max-width:767px) {
-            margin-bottom: 20px;
+    .counter {
+        padding-bottom: 50px;
+        @include flex(space-between, center, row);
+        .col {
+            flex: 0 0 30%;
+            color: $pink;
+            @include flex(center, center, column);
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+            }
+            h2 {
+                font-size: 4rem;
+            }
+            h4 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+            hr {
+                width: 20%;
+                border: none;
+                height: 2px;
+                background: $white;
+            }
         }
     }
 }
